@@ -1,13 +1,17 @@
 // Step 1: Import React
 import * as React from "react";
-import { Link } from "gatsby";
 import Layout from "../components/layout";
+import { StaticImage } from "gatsby-plugin-image";
 
 // Step 2: Define your component
 const AboutPage = () => {
   return (
     <Layout>
-      <p>This is A paragrapgh text </p>
+      <p>This is A paragrapgh text in About Page </p>
+      <StaticImage
+        alt="This is a image pulling from local file system"
+        src="../images/icon.png"
+      />
     </Layout>
   );
 };
